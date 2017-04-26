@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// This is the beginning of all declared mixins for designingindex.io
+// -----------------------------------------------------------------------------
+
+
+// All 'a' tags and their hover state
+
+@mixin linkText {
+    font: {
+        font-family: 'Monda', sans-serif;
+        weight: 300;
+        letter-spacing: 1.6;
+        color: $backgroundDark;
+    }
+    &:hover {
+        color: $accent;
+    }
+}
+
+////   All mixins for typography do not include colors. Colors should be defined using the ////   declared variables
+
+// Declaration for h1 tag
+@mixin hOne {
+    font: {
+        family: 'Playfair Display', serif;
+        size: 4em;
+    }
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
+// Declaration for h2 tag
+@mixin hTwo {
+    font: {
+        family: 'Monda', sans-serif;
+        weight: 700;
+        size: 3.5em;
+    }
+    letter-spacing: 2px;
+}
+
+// Declaration for h3 tag
+@mixin hThree {
+    font: {
+        family: 'Monda', sans-serif;
+        weight: 400;
+        size: 2em;
+    }
+    letter-spacing: 1px;
+}
+
+// Declaration for h4 tag
+@mixin hFour {
+    font: {
+        family: 'Didact Gothic', sans-serif;
+        size: 1.5em;
+    }
+    letter-spacing: 2px;
+    line-height: 160%;
+}
+
+// Declaration for h5 tag
+@mixin hFive {
+    font: {
+        family: 'Didact Gothic', sans-serif;
+        size: 1.25em;
+    }
+    letter-spacing: 1.6px;
+    line-height: 2;
+}
+
+// Declaration for paragraph text
+@mixin paragraph {
+    font: {
+        family: 'Didact Gothic', sans-serif;
+        size: 1em;
+    }
+    letter-spacing: 1.6px;
+    line-height: 2;
+}
+
+// Declaration for captions
+@mixin caption {
+    font: {
+        family: 'Didact Gothic', sans-serif;
+        size: 0.8em;
+    }
+    letter-spacing: 1.6px;
+    line-height: 2;
+}
