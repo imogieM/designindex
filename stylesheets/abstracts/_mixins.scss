@@ -1,0 +1,96 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+    @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}
+
+@mixin hOne {
+    font: {
+        family: 'Playfair Display', sans-serif;
+        size: 56px;
+    }
+    letter-spacing: 1.6px;
+    color: $accent;
+}
+
+@mixin hTwo {
+    font: {
+        family: 'Monda', sans-serif;
+        weight: 700;
+        size: 40px;
+    }
+    letter-spacing: 1.6px;
+    color: $defaultWhite;
+}
+
+@mixin hThree {
+    font: {
+        family: 'Monda', sans-serif;
+        size: 32px;
+        weight: 400;
+    }
+    letter-spacing: 1.4px;
+    color: $defaultWhite;
+}
+
+@mixin hFour {
+    font: {
+        family: 'Monda', sans-serif;
+        size: 24px;
+    }
+    color: $defaultWhite;
+}
+
+@mixin hFive {
+    font: {
+        family: 'Monda', sans-serif;
+        size: 20px;
+        weight: 400;
+    }
+}
+
+@mixin paragraph {
+    font: {
+        family: 'Monda', sans-serif;
+        size: 15px;
+        weight: 400;
+    }
+    letter-spacing: 1.4px;
+}
+
+@mixin caption {
+    font: {
+        family: 'Monda', sans-serif;
+        size: 13px;
+        weight: 400;
+    }
+    letter-spacing: 1.4px;
+}

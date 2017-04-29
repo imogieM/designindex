@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+
+h1 {
+    @include hOne;
+}
+
+h2 {
+    @include hTwo;
+}
+
+h3 {
+    @include hThree;
+}
+
+h4 {
+    @include hFour;
+}
+
+h5 {
+    @include hFive;
+}

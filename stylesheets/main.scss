@@ -1,0 +1,140 @@
+@charset 'UTF-8';
+// 1. Configuration and helpers
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins';
+// 2. Vendors
+@import 'vendor/normalize';
+// 3. Base stuff
+@import 'base/base',
+'base/fonts',
+'base/typography',
+'base/helpers';
+// 4. Layout-related sections
+@import 'layout/header',
+'layout/footer';
+// 5. Components
+@import 'components/button';
+// 6. Page-specific styles
+@import 'pages/home';
+// 7. Themes
+@import 'themes/default';
+body {
+    color: $defaultWhite;
+    background-color: $background;
+    ;
+}
+
+.pageHeader {
+    width: 90%;
+    h1 {
+        @include hOne;
+        margin: 0;
+        padding: 0;
+    }
+    h4 {
+        width: 90%;
+    }
+    h5 {
+        @include hFive;
+        color: $backgroundLight;
+        padding: {
+            bottom: 8px;
+        }
+        a {
+            transition: all 0.2s;
+            color: $backgroundLight;
+            &:hover {
+                color: $accent;
+                text-decoration: none;
+                transition: all 0.2s;
+            }
+        }
+    }
+}
+
+.componentLink {
+    border-bottom: 1px solid $backgroundDark;
+    padding: {
+        bottom: 20px;
+        top: 12px;
+    }
+    img {
+        float: right;
+        clear: right;
+        position: relative;
+        bottom: 56px;
+    }
+    h5 {
+        color: $defaultWhite;
+    }
+}
+
+.pageContent {
+    a {
+        transition: all 0.2s;
+        text-decoration: none;
+        p {
+            color: $backgroundLight;
+            @include paragraph;
+            ;
+        }
+        &:hover {
+            h2, h3 {
+                color: $accent;
+                transition: all 0.2s;
+            }
+        }
+    }
+}
+
+.bigDivider {
+    height: 24px;
+    background-color: $backgroundDark;
+    border-top: none
+}
+
+.smallDivider {
+    height: 1px;
+    background-color: $backgroundDark;
+    border-top: none
+}
+
+.toolHeader {
+    font-family: 'Monda', sans-serif;
+    color: $backgroundLight;
+    margin-bottom: 24px;
+    margin-top: 56px;
+}
+
+.learnMaterial {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .imageSpace {
+        border-radius: 4;
+        img {
+            width: 100%;
+        }
+        margin-bottom: 16px;
+    }
+    p {
+        @include caption;
+        color: $backgroundLight;
+    }
+    a {
+        @include hFive;
+        color: $defaultWhite;
+        line-height: 1.6;
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.subSection {
+    color: $primary;
+    margin-top: 24px;
+}
+

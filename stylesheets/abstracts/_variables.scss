@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+/// Copy text color
+/// @type Color
+$defaultWhite: rgba(255, 255, 255, 1.00) !default;
+
+/// Brand accent color
+/// @type Color
+$accent: rgba(244, 206, 22, 1.00) !default;
+
+/// Brand primary color
+/// @type Color
+$primary: rgba(241, 16, 27, 1.00) !default;
+
+/// Light grey
+/// @type Color
+$background: rgba(19, 0, 53, 1.00) !default;
+
+/// Medium grey
+/// @type Color
+$backgroundDark: rgba(86, 65, 129, 1.00) !default;
+
+/// Dark grey
+/// @type Color
+$backgroundLight: rgba(149, 128, 189, 1.00) !default;
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1170px !default;
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
