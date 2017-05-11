@@ -537,12 +537,33 @@ h1, h2, h3, h4, h5, h6 {
 /* line 44, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .toolIcon {
   width: 100%;
+  padding: 10%;
 }
 
-/* line 48, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 49, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .divider {
   background-color: #130035;
-  height: 56px;
+  height: 48px;
+}
+
+/* line 54, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+.dividerLight {
+  background-color: #130035;
+  height: 12px;
+}
+
+/* line 61, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+.bigDivider {
+  height: 16px;
+  background-color: #564181;
+  border-top: none;
+}
+
+/* line 67, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+.smallDivider {
+  height: 1px;
+  background-color: #564181;
+  border-top: none;
 }
 
 /**
@@ -754,29 +775,17 @@ body {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.4px;
+  width: 80%;
 }
 
 /* line 83, /Users/imogiemubarak/designindex/stylesheets/main.scss */
-.pageContent a:hover h2, .pageContent a:hover h3 {
+.pageContent a:hover h2,
+.pageContent a:hover h3 {
   color: #f4ce16;
   transition: all 0.2s;
 }
 
-/* line 91, /Users/imogiemubarak/designindex/stylesheets/main.scss */
-.bigDivider {
-  height: 24px;
-  background-color: #564181;
-  border-top: none;
-}
-
-/* line 97, /Users/imogiemubarak/designindex/stylesheets/main.scss */
-.smallDivider {
-  height: 1px;
-  background-color: #564181;
-  border-top: none;
-}
-
-/* line 103, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 92, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .toolHeader {
   font-family: 'Monda', sans-serif;
   color: #9580bd;
@@ -784,24 +793,24 @@ body {
   margin-top: 56px;
 }
 
-/* line 110, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 99, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-/* line 113, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 102, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial .imageSpace {
   border-radius: 4;
   margin-bottom: 16px;
 }
 
-/* line 115, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 104, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial .imageSpace img {
   width: 100%;
 }
 
-/* line 120, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 109, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial p {
   font-family: 'Monda', sans-serif;
   font-size: 13px;
@@ -810,7 +819,7 @@ body {
   color: #9580bd;
 }
 
-/* line 124, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 113, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial a {
   font-family: 'Monda', sans-serif;
   font-size: 20px;
@@ -819,17 +828,55 @@ body {
   line-height: 1.6;
 }
 
-/* line 128, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 117, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial a:hover {
   color: #f4ce16;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 136, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 125, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .subSection {
   color: #f1101b;
   margin-top: 24px;
+}
+
+/* line 130, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+.shareLinks > li > a {
+  color: #9580bd;
+  font-family: 'Monda', sans-serif;
+  font-size: 16px;
+}
+
+/* line 134, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+.shareLinks > li > a:hover {
+  color: #f4ce16;
+  text-decoration: none;
+}
+
+/* line 140, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+.shareLinks > li {
+  list-style: none;
+  padding-left: 0px;
+  display: inline;
+  margin-left: 24px;
+  position: relative;
+}
+
+/* line 148, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+.headerLinks {
+  display: inline;
+}
+
+/* line 154, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+h5 span a {
+  color: #9580bd;
+}
+
+/* line 156, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+h5 span a:hover {
+  color: #f4ce16;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=../css/main.map */

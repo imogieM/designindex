@@ -77,27 +77,16 @@ body {
         p {
             color: $backgroundLight;
             @include paragraph;
-            ;
+            width: 80%;
         }
         &:hover {
-            h2, h3 {
+            h2,
+            h3 {
                 color: $accent;
                 transition: all 0.2s;
             }
         }
     }
-}
-
-.bigDivider {
-    height: 24px;
-    background-color: $backgroundDark;
-    border-top: none
-}
-
-.smallDivider {
-    height: 1px;
-    background-color: $backgroundDark;
-    border-top: none
 }
 
 .toolHeader {
@@ -138,3 +127,36 @@ body {
     margin-top: 24px;
 }
 
+.shareLinks>li>a {
+    color: $backgroundLight;
+    font-family: 'Monda', sans-serif;
+    font-size: 16px;
+    &:hover {
+        color: $accent;
+        text-decoration: none;
+    }
+}
+
+.shareLinks>li {
+    list-style: none;
+    padding-left: 0px;
+    display: inline;
+    margin-left: 24px;
+    position: relative;
+}
+
+.headerLinks {
+    display: inline;
+}
+
+h5 {
+    span {
+        a {
+            color: $backgroundLight;
+            &:hover {
+                color: $accent;
+                text-decoration: none;
+            }
+        }
+    }
+}

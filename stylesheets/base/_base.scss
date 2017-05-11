@@ -43,9 +43,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .toolIcon {
     width: 100%;
+    padding: 10%
 }
 
 .divider {
     background-color: $background;
-    height: 56px;
+    height: 48px;
+}
+
+.dividerLight {
+    background-color: $background;
+    height: 12px;
+}
+
+
+
+.bigDivider {
+    height: 16px;
+    background-color: $backgroundDark;
+    border-top: none
+}
+
+.smallDivider {
+    height: 1px;
+    background-color: $backgroundDark;
+    border-top: none
 }
