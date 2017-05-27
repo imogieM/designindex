@@ -39,6 +39,12 @@
     }
     letter-spacing: 1.6px;
     color: $accent;
+    @media screen and (min-width: 480px) {
+        font: {
+            size: 40px;
+            weight: 400;
+        }
+    }
 }
 
 @mixin hTwo {
@@ -67,9 +73,8 @@
         size: 24px;
     }
     color: $defaultWhite;
-    @media only screen and (max-width: 400px) {
+    @media screen and (min-width: 480px) {
         font: {
-            family: ‘Monda’, sans-serif;
             size: 18px;
             weight: 400;
         }
@@ -82,7 +87,6 @@
         size: 20px;
         weight: 400;
     }
-
 }
 
 @mixin paragraph {

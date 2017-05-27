@@ -65,6 +65,10 @@ body {
         clear: right;
         position: relative;
         bottom: 56px;
+        
+        @media screen and (max-width: 480px) {
+            visibility: collapse;
+        }
     }
     h5 {
         color: $defaultWhite;
