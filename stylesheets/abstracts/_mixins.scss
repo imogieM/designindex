@@ -34,7 +34,7 @@
 
 @mixin hOne {
     font: {
-        family: 'Playfair Display', sans-serif;
+        family: 'Playfair Display', serif;
         size: 56px;
     }
     letter-spacing: 1.6px;
@@ -44,8 +44,8 @@
 @mixin hTwo {
     font: {
         family: 'Monda', sans-serif;
-        weight: 700;
         size: 40px;
+        weight: 700;
     }
     letter-spacing: 1.6px;
     color: $defaultWhite;
@@ -67,6 +67,13 @@
         size: 24px;
     }
     color: $defaultWhite;
+    @media only screen and (max-width: 400px) {
+        font: {
+            family: ‘Monda’, sans-serif;
+            size: 18px;
+            weight: 400;
+        }
+    }
 }
 
 @mixin hFive {
@@ -75,6 +82,7 @@
         size: 20px;
         weight: 400;
     }
+
 }
 
 @mixin paragraph {

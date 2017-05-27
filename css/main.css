@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -491,7 +492,7 @@ template {
 /**
  * Set up a decent box model on the root element
  */
-/* line 8, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 9, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 html {
   box-sizing: border-box;
 }
@@ -502,20 +503,22 @@ html {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 18, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
-*, *::before, *::after {
+/* line 21, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 /**
  * Basic styles for links
  */
-/* line 25, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 32, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 27, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 34, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 a:hover {
   color: #f4ce16;
   text-decoration: none;
@@ -527,43 +530,89 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-/* line 38, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
-h1, h2, h3, h4, h5, h6 {
+/* line 44, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 8px;
   margin-bottom: 8px;
   line-height: normal;
 }
 
-/* line 44, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 55, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .toolIcon {
   width: 100%;
   padding: 10%;
 }
 
-/* line 49, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 60, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .divider {
   background-color: #130035;
   height: 48px;
 }
 
-/* line 54, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 65, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .dividerLight {
   background-color: #130035;
   height: 12px;
 }
 
-/* line 61, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 70, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .bigDivider {
   height: 16px;
   background-color: #564181;
   border-top: none;
 }
 
-/* line 67, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+/* line 76, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
 .smallDivider {
   height: 1px;
   background-color: #564181;
   border-top: none;
+}
+
+@media only screen and (min-width: 475px) {
+  /* line 84, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: normal;
+  }
+  /* line 94, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  .toolIcon {
+    width: 100%;
+    padding: 10%;
+  }
+  /* line 98, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  .divider {
+    background-color: #130035;
+    height: 24px;
+  }
+  /* line 102, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  .dividerLight {
+    background-color: #130035;
+    height: 6px;
+  }
+  /* line 106, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  .bigDivider {
+    height: 8px;
+    background-color: #564181;
+    border-top: none;
+  }
+  /* line 111, /Users/imogiemubarak/designindex/stylesheets/base/_base.scss */
+  .smallDivider {
+    height: 1px;
+    background-color: #564181;
+    border-top: none;
+  }
 }
 
 /**
@@ -571,19 +620,37 @@ h1, h2, h3, h4, h5, h6 {
  */
 /* line 5, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
 h1 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 56px;
   letter-spacing: 1.6px;
   color: #f4ce16;
 }
 
+@media screen and (min-width: 1200px) {
+  /* line 5, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
+  h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
 /* line 9, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
 h2 {
   font-family: 'Monda', sans-serif;
-  font-weight: 700;
   font-size: 40px;
+  font-weight: 700;
   letter-spacing: 1.6px;
   color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 9, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
+  h2 {
+    font-family: 'Monda', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
 }
 
 /* line 13, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
@@ -595,6 +662,15 @@ h3 {
   color: white;
 }
 
+@media only screen and (max-width: 400px) {
+  /* line 13, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
+  h3 {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
 /* line 17, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
 h4 {
   font-family: 'Monda', sans-serif;
@@ -602,11 +678,29 @@ h4 {
   color: white;
 }
 
+@media only screen and (max-width: 400px) {
+  /* line 17, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
+  h4 {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 /* line 21, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
 h5 {
   font-family: 'Monda', sans-serif;
   font-size: 20px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 21, /Users/imogiemubarak/designindex/stylesheets/base/_typography.scss */
+  h5 {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 /**
@@ -707,7 +801,7 @@ body {
 
 /* line 30, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .pageHeader h1 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 56px;
   letter-spacing: 1.6px;
   color: #f4ce16;
@@ -715,9 +809,18 @@ body {
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  /* line 30, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+  .pageHeader h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
 /* line 35, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .pageHeader h4 {
-  width: 90%;
+  width: 100%;
 }
 
 /* line 38, /Users/imogiemubarak/designindex/stylesheets/main.scss */
@@ -727,6 +830,15 @@ body {
   font-weight: 400;
   color: #9580bd;
   padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 38, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+  .pageHeader h5 {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 /* line 44, /Users/imogiemubarak/designindex/stylesheets/main.scss */
@@ -749,7 +861,7 @@ body {
   padding-top: 12px;
 }
 
-/* line 62, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 63, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .componentLink img {
   float: right;
   clear: right;
@@ -757,18 +869,18 @@ body {
   bottom: 56px;
 }
 
-/* line 68, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 69, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .componentLink h5 {
   color: white;
 }
 
-/* line 74, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 75, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .pageContent a {
   transition: all 0.2s;
   text-decoration: none;
 }
 
-/* line 77, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 78, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .pageContent a p {
   color: #9580bd;
   font-family: 'Monda', sans-serif;
@@ -778,14 +890,23 @@ body {
   width: 80%;
 }
 
-/* line 83, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+@media only screen and (max-width: 400px) {
+  /* line 78, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+  .pageContent a p {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/* line 84, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .pageContent a:hover h2,
 .pageContent a:hover h3 {
   color: #f4ce16;
   transition: all 0.2s;
 }
 
-/* line 92, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 93, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .toolHeader {
   font-family: 'Monda', sans-serif;
   color: #9580bd;
@@ -793,24 +914,24 @@ body {
   margin-top: 56px;
 }
 
-/* line 99, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 100, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-/* line 102, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 103, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial .imageSpace {
   border-radius: 4;
   margin-bottom: 16px;
 }
 
-/* line 104, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 105, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial .imageSpace img {
   width: 100%;
 }
 
-/* line 109, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 110, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial p {
   font-family: 'Monda', sans-serif;
   font-size: 13px;
@@ -819,7 +940,16 @@ body {
   color: #9580bd;
 }
 
-/* line 113, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+@media only screen and (max-width: 400px) {
+  /* line 110, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+  .learnMaterial p {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+/* line 114, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial a {
   font-family: 'Monda', sans-serif;
   font-size: 20px;
@@ -828,33 +958,42 @@ body {
   line-height: 1.6;
 }
 
-/* line 117, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+@media only screen and (max-width: 400px) {
+  /* line 114, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+  .learnMaterial a {
+    font-family: ‘Monda’, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/* line 118, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .learnMaterial a:hover {
   color: #f4ce16;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 125, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 126, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .subSection {
   color: #f1101b;
   margin-top: 24px;
 }
 
-/* line 130, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 131, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .shareLinks > li > a {
   color: #9580bd;
   font-family: 'Monda', sans-serif;
   font-size: 16px;
 }
 
-/* line 134, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 135, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .shareLinks > li > a:hover {
   color: #f4ce16;
   text-decoration: none;
 }
 
-/* line 140, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 141, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .shareLinks > li {
   list-style: none;
   padding-left: 0px;
@@ -863,17 +1002,17 @@ body {
   position: relative;
 }
 
-/* line 148, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 149, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 .headerLinks {
   display: inline;
 }
 
-/* line 154, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 155, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 h5 span a {
   color: #9580bd;
 }
 
-/* line 156, /Users/imogiemubarak/designindex/stylesheets/main.scss */
+/* line 157, /Users/imogiemubarak/designindex/stylesheets/main.scss */
 h5 span a:hover {
   color: #f4ce16;
   text-decoration: none;

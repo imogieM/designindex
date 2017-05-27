@@ -17,16 +17,24 @@
 
     <!-- Bootstrap -->
 
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- Output CSS Folder and Google Font Import -->
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Monda:400,700|Playfair+Display:900i" rel="stylesheet">
     <!-- Javascript File -->
 </head>
 
 <body>
-    <div class="divider"></div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-default" href="#"> <img alt="Brand" src="../images/diBrand.svg"> </a>
+                </div>
+            </nav>
+        </div>
+    </header>
     <section class="container">
         <div class="toolHeader">
             <row>
@@ -54,12 +62,12 @@
                 <a href="http://origami.design/tutorials/">
                     <div class="componentLink">
                         <h3>Origami Tutorials</h3>
-                        <p>A collection of video tutorials to teach you how to use Origami Studio</p> <img src="/images/right@1x.svg" alt="arrow-link"> </div>
+                        <p>A collection of video tutorials to teach you how to use Origami Studio</p> <img src="../images/right@1x.svg" alt="arrow-link"> </div>
                 </a>
                 <a href="https://www.youtube.com/playlist?list=PL_-Gq1MvPcBo-70OfLylfJ1j_T3eP_KX3">
                     <div class="componentLink">
                         <h3>Tutorials by UX Hacker</h3>
-                        <p>Everything a beginner needs to get up and running with origami Studio</p><img src="/images/right@1x.svg" alt="arrow-link">
+                        <p>Everything a beginner needs to get up and running with origami Studio</p><img src="../images/right@1x.svg" alt="arrow-link">
                     </div>
                 </a>
             </div>
@@ -75,7 +83,7 @@
                 <a href="http://origami.design/examples/">
                     <div class="componentLink">
                         <h3>Origami Examples</h3>
-                        <p>A collection of downloadable prototypes for Origami Studio</p><img src="/images/right@1x.svg" alt="arrow-link"></div>
+                        <p>A collection of downloadable prototypes for Origami Studio</p><img src="../images/right@1x.svg" alt="arrow-link"></div>
                 </a>
             </div>
         </div>
@@ -90,27 +98,28 @@
                 <a href="https://www.facebook.com/groups/origami.community/?hc_ref=SEARCH">
                     <div class="componentLink">
                         <h3>Origami Facebook Community</h3>
-                        <p>Discussion, questions, feedback, and sharing examples related to Origami Studio</p> <img src="/images/right@1x.svg" alt="arrow-link"> </div>
+                        <p>Discussion, questions, feedback, and sharing examples related to Origami Studio</p> <img src="../images/right@1x.svg" alt="arrow-link"> </div>
                 </a>
             </div>
         </div>
     </section>
-    
+
     <div class="divider"></div>
-    
+
     <footer>
         <section id="footerLogo">
-            <nav class="navbar navbar-default">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <a href="/index.html"> <img alt="Brand" src="/images/designIndexLong.svg"> </a>
+                        <a href="index.html"> <img alt="Brand" src="../images/designIndexLong.svg"> </a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://twitter.com/share? url=http://www.designindex.io text=A curated list of urls to resources for learning design." target="_blank">TWEET THIS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="https://twitter.com/share? url=http://www.designindex.io text=A curated list of urls to resources for learning design." target="_blank">TWEET IT</a></li>
                         <li class="dropdown"> <a href="http://www.facebook.com/sharer.php? url=http://www.designindex.io" target="_blank">SHARE ON FACEBOOK</a> </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </section>
     </footer>
 </body>

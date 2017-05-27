@@ -17,30 +17,40 @@
 
     <!-- Bootstrap -->
 
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- Output CSS Folder and Google Font Import -->
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Monda:400,700|Playfair+Display:900i" rel="stylesheet">
     <!-- Javascript File -->
 </head>
 
 <body>
-    <div class="divider"></div>
-    <div class="container toolHeader">
-        <row>
-            <div class="col-md-3">
-                <img src="/images/toolIcons/adobexd.png" alt="adobe-xd" class="toolIcon" />
-            </div>
-            <div class="col-md-9">
-                <div>
-                    <h1>adobeXD</h1>
-                    <h4>Adobe XD is a light weight design tool with almost no learning curve. It's the first all-in-one cross-platform tool for designing and prototyping websites and mobile apps </h4>
-                    <h5 class="price">Free &middot; Mac &amp; Windows &middot; <span><a href="http://www.adobe.com/products/experience-design.html">Visit Website</a></span></h5>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-default" href="#"> <img alt="Brand" src="../images/diBrand.svg"> </a>
                 </div>
-            </div>
-        </row>
-    </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <div class="toolHeader">
+            <row>
+                <div class="col-md-3">
+                    <img src="../images/toolIcons/adobexd.png" alt="adobe-xd" class="toolIcon" />
+                </div>
+                <div class="col-md-9">
+                    <div>
+                        <h1>adobeXD</h1>
+                        <h4>Adobe XD is a light weight design tool with almost no learning curve. It's the first all-in-one cross-platform tool for designing and prototyping websites and mobile apps </h4>
+                        <h5 class="price">Free &middot; Mac &amp; Windows &middot; <span><a href="http://www.adobe.com/products/experience-design.html">Visit Website</a></span></h5>
+                    </div>
+                </div>
+            </row>
+        </div>
+    </section>
     <div class="divider"></div>
     <section class="container">
         <!------ All learning resources are listed in this section ------->
@@ -50,17 +60,17 @@
                 <a href="https://helpx.adobe.com/support/experience-design.html?promoid=3SH1B97W&mv=other">
                     <div class="componentLink">
                         <h3>Adobe XD Learn &amp; Support</h3>
-                        <p>A beginners guide to help start your first project compiled by the XD team</p> <img src="/images/right@1x.svg" alt="arrow-link"> </div>
+                        <p>A beginners guide to help start your first project compiled by the XD team</p> <img src="../images/right@1x.svg" alt="arrow-link"> </div>
                 </a>
                 <a href="http://blog.graphicstock.com/graphic-design-tutorials/a-quick-start-guide-to-adobe-xd-8-essential-tutorials-for-experience-design-cc/">
                     <div class="componentLink">
                         <h3>Quick Start Guide</h3>
-                        <p>A list of essential tutorials for learning Adobe Experience Design</p><img src="/images/right@1x.svg" alt="arrow-link"></div>
+                        <p>A list of essential tutorials for learning Adobe Experience Design</p><img src="../images/right@1x.svg" alt="arrow-link"></div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=mtZJUvzQrA4&list=PLkiM1tZke4mivrZRPcqp_8oHFxlD8-IP5">
                     <div class="componentLink">
                         <h3>Adobe XD Tutorials</h3>
-                        <p>A collection of free video tutorials for Adobe XD on Youtube</p><img src="/images/right@1x.svg" alt="arrow-link"></div>
+                        <p>A collection of free video tutorials for Adobe XD on Youtube</p><img src="../images/right@1x.svg" alt="arrow-link"></div>
                 </a>
             </div>
         </div>
@@ -74,12 +84,12 @@
                 <a href="http://www.xdguru.com/">
                     <div class="componentLink">
                         <h3>XD Guru</h3>
-                        <p>The biggest collection of UI Kits and Tutorials for Adobe XD</p> <img src="/images/right@1x.svg" alt="arrow-link"> </div>
+                        <p>The biggest collection of UI Kits and Tutorials for Adobe XD</p> <img src="../images/right@1x.svg" alt="arrow-link"> </div>
                 </a>
                 <a href="http://ui8.net">
                     <div class="componentLink">
                         <h3>UI8</h3>
-                        <p>A marketplace for free and paid high quality ui kits, icons and other templates.</p><img src="/images/right@1x.svg" alt="arrow-link"></div>
+                        <p>A marketplace for free and paid high quality ui kits, icons and other templates.</p><img src="../images/right@1x.svg" alt="arrow-link"></div>
                 </a>
             </div>
         </div>
@@ -93,7 +103,7 @@
                 <a href="http://www.xdguru.com/xd-facebook-group/">
                     <div class="componentLink">
                         <h3>AdobeXD on Facebook</h3>
-                        <p>A private group on Facebook for all those UI/UX designers using XD</p> <img src="/images/right@1x.svg" alt="arrow-link"> </div>
+                        <p>A private group on Facebook for all those UI/UX designers using XD</p> <img src="../images/right@1x.svg" alt="arrow-link"> </div>
                 </a>
             </div>
         </div>
@@ -102,17 +112,18 @@
     <div class="divider"></div>
     <footer>
         <section id="footerLogo">
-            <nav class="navbar navbar-default">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <a href="/index.html"> <img alt="Brand" src="/images/designIndexLong.svg"> </a>
+                        <a href="index.html"> <img alt="Brand" src="../images/designIndexLong.svg"> </a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://twitter.com/share? url=http://www.designindex.io text=A curated list of urls to resources for learning design." target="_blank">TWEET THIS</a></li>
-                        <li class="dropdown"> <a href="http://www.facebook.com/sharer.php? url=http://www.designindex.io" target="_blank">SHARE ON FACEBOOK</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="https://twitter.com/share? url=http://www.designindex.io text=A curated list of urls to resources for learning design." target="_blank">TWEET IT</a></li>
+                        <li class="dropdown"> <a href="http://www.facebook.com/sharer.php? url=http://www.designindex.io" target="_blank">SHARE ON FACEBOOK</a> </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </section>
     </footer>
 </body>
