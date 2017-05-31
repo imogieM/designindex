@@ -33,48 +33,65 @@
 }
 
 @mixin hOne {
+    letter-spacing: 1.6px;
+    color: $accent;
     font: {
         family: 'Playfair Display', serif;
         size: 56px;
     }
-    letter-spacing: 1.6px;
-    color: $accent;
     @media screen and (min-width: 480px) {
         font: {
-            size: 40px;
+            family: 'Playfair Display', serif;
+            size: 32px;
             weight: 400;
         }
     }
 }
 
 @mixin hTwo {
+    letter-spacing: 1.6px;
+    color: $defaultWhite;
     font: {
         family: 'Monda', sans-serif;
         size: 40px;
         weight: 700;
     }
-    letter-spacing: 1.6px;
-    color: $defaultWhite;
+    @media screen and (min-width: 480px) {
+        font: {
+            family: 'Monda', sans-serif;
+            size: 32px;
+            weight: 400;
+        }
+    }
 }
 
 @mixin hThree {
+    letter-spacing: 1.4px;
+    color: $defaultWhite;
     font: {
         family: 'Monda', sans-serif;
         size: 32px;
         weight: 400;
     }
-    letter-spacing: 1.4px;
-    color: $defaultWhite;
+    @media screen and (max-width: 480px) {
+        font: {
+            family: 'Monda', sans-serif;
+            size: 22px;
+            weight: 400;
+        }
+    }
 }
 
 @mixin hFour {
+    letter-spacing: 1.4px;
+    color: $defaultWhite;
     font: {
         family: 'Monda', sans-serif;
         size: 24px;
     }
-    color: $defaultWhite;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
         font: {
+            family: 'Monda', sans-serif;
             size: 18px;
             weight: 400;
         }
@@ -82,10 +99,19 @@
 }
 
 @mixin hFive {
+    letter-spacing: 1.4px;
+    color: $defaultWhite;
     font: {
         family: 'Monda', sans-serif;
         size: 20px;
         weight: 400;
+    }
+    @media screen and (max-width: 480px) {
+        font: {
+            family: 'Monda', sans-serif;
+            size: 15px;
+            weight: 400;
+        }
     }
 }
 
